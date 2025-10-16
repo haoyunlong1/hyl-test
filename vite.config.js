@@ -53,9 +53,11 @@ function getLocalNetworkIP() {
 }
 
 export default defineConfig(({ mode }) => {
+
   const env = loadEnv(mode, process.cwd());
  // console.log(env,'env','mode',mode)
   return {
+    base: './',
     plugins: [
         vue(),
       {
