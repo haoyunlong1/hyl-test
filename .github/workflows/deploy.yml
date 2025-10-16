@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write   # ✅ 这行非常关键！！！
+
 jobs:
   build:
     runs-on: ubuntu-latest
