@@ -11,7 +11,14 @@ const routes = [
     { path: "/PdfViewer",name:"PdfViewer", component: () => import('../components/PdfViewer.vue') },
     { path: "/HelloWorld",name:"HelloWorld", component: () => import('../components/HelloWorld.vue') },
     { path: "/uploadceshi",name:"uploadceshi", component: () => import('@components/uploadceshi.vue') },
+   // { path: "/LiveRoom",name:"LiveRoom", component: () => import('@components/LiveRoom.vue') },
+    { path: "/live/:roomId/:role",name:"live", component: () => import('@components/LiveRoom.vue') },
+
+    { path: '/RoomList', name: 'RoomList',  component: () => import('@components/RoomList.vue'), props: true }
+
 ];
+
+
 
 // 3. 创建路由实例
 const router = createRouter({
